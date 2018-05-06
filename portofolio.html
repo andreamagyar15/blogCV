@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/portofolio.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/scriptPortofolio.js"></script>
+
+    <title>My online cv</title>
+</head>
+<body>
+    <header class="clearfix">
+        <div id="bannerTitle">
+           <h1>Welcome to my page</h1> 
+        </div>
+    </header>
+    <nav>
+        <div class="navbarContent">
+            <a href="index.html">Home</a>
+            <a href="CV.html">My CV</a>
+            <a href="portofolio.html">Portofolio</a>
+            <div class="dropdown">
+                <a class="dropdownButton">Contact</a>
+            </div>
+        </div>
+        <a id="menuIcon">&#9776;</a>
+    </nav>
+    <main>
+        <div class="dropdownContent">
+        <script type="text/javascript" src="js/scriptPortofolio/scriptTemperature.js"></script>
+            <a href="mailto:andreamagyar15@gmail.com"> E-mail</a>
+            <a href="https://www.linkedin.com/in/magyar-andrea-23b034102">Linkedin</a>
+        </div>
+        <div class="infoContainer">
+            <script type="text/javascript" src="js/scriptPortofolio/scriptGeo.js"></script>
+            <h2>Temperature API</h2>
+                <P id="geoLocation"> </P>
+                <p id="currentCity" >Your current city is: </p>
+                <p id="temperature">The temperature is: </p>
+        </div>
+        <div class="infoContainer validationContainer">
+            <script type="text/javascript" src="js/scriptPortofolio/scriptJQuery.js"></script>
+            <h1>JQuery </h1>
+            <form>
+                <p id="validationBanner"></p>
+                 <main>
+                    <input type="text" name="FirstName" placeholder="First Name"/>
+                    <input type="text" name="LastName" placeholder="Last Name"/>
+                    <h3>Gender</h3>
+                    <input type="radio" name="gender" value="male"><p> M </p>
+                    <input type="radio" name="gender" value="female"><p>F</p> 
+                    <textarea name="content" placeholder="Youre message here..."></textarea>
+                    <input type="submit" value="Submit" id ="btn-submit"/>
+                </main>
+             </form>
+            <aside>
+                <img  src="https://www.w3schools.com/w3css/img_fjords.jpg"/>
+            </aside>
+        </div>
+       
+        <div class="infoContainer ajaxContainer">
+            <h1>Ajax</h1>
+            <script type="text/javascript" src="js/scriptPortofolio/scriptBike.js"></script>
+            <div id="container"></div>
+            <div id="bikeTemplate">
+                <h5 class="companyName">  <button class="buttonDelete">Delete</button> </h5>
+                <p class="companyLocation">Location: </p>
+                <p class="bikeStations">Bike stations: </p>
+            </div>
+
+        </div>
+        <div class="infoContainer">
+            <h1>Local Storage/Cookies</h1>
+            <script type="text/javascript" src="js/scriptPortofolio/scriptCookies.js"></script>
+            <p>Please choose the format</p>
+            <input type="radio" name="temperature" value="C"/> C
+            <input type="radio" name="temperature" value="F"/> F
+            <p>The temperature in Cluj-Napoca is:</p>
+            <p id="temperatureContainer"> </p>
+            <br>
+            <p id="imageTemperature"></p>
+        </div>
+    <footer>
+        <p> &copy; Copyright 2018. All Rights Reserved.</p> 
+    </footer>
+</body>
+</html>

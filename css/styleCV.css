@@ -1,0 +1,48 @@
+aside{
+    width:30%;
+    text-align: center;
+    background-color:#12579C;
+    margin: 0px 10px;
+    display: inline-block;
+   
+}
+.containerLeft{
+    padding:20px 0px;
+    border-bottom: 1px solid white;
+}
+h4{
+    padding-bottom: 10px;
+}
+ul{
+    list-style-type: none;
+}
+#rigtContainer{
+    width:65%;
+    background-color:#12579C;
+    display:inline-block;
+    padding:10px;
+   
+}
+.rightSideContent{
+     border-bottom: 1px solid white;
+}
+.rightSideDescription{
+    padding:10px 20px;
+    text-align: justify;
+}
+.rigthDescription{
+    padding-top: 10px;
+}
+
+#link{
+    margin:10px;
+    font-size:25px;
+}
+#link a{
+     text-decoration: none;
+     padding:20px;
+      color:white;
+}
+#link:hover{
+     background-color:#262626;
+}

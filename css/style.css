@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+html{
+    min-height: 100%;
+    position: relative;
+}
+body{
+    margin-bottom: 50px;
+    background-color:#8c8c8c;
+}
+.clearfix::after{
+    clear:both;
+    content:'';
+    display: block;
+}
+header{
+    padding:20px;
+    background-image:url("images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100%;
+}
+#bannerTitle{
+    display:flex;
+    color:white;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+}
+@media(max-width:768px){
+    #bannerTitle {
+        font-size:10px;
+    }
+}
+nav{
+    background-color:#616161; 
+    height:50px;
+    display: flex;
+    position: relative;
+    
+}
+.navbarContent{
+    align-self:center;
+    padding:0px 20px;
+    
+}
+nav a{
+    float:left;
+    color:white;
+    text-decoration: none;
+    width:100px;
+    padding:20px;
+}
+#menuIcon{
+    display:none;
+}
+.dropdown{
+    position: absolute;
+    right: 0px;
+    box-sizing: border-box;
+}
+
+@media(max-width:550px){
+    #navShow{
+        display:block;
+        width:50px; 
+        padding:2px;
+        position:absolute;
+        top:40px;
+    }
+    #navShow a{
+        background-color:#004d4d;
+    }
+    #navHide{
+        display:none;
+    }
+    .navbarContent{
+        display: none;
+    }
+    .dropdown{
+        position:static;  
+    }
+    #menuIcon{
+        display: block;
+    }
+}
+
+
+
+.dropdown:hover, nav a:hover{
+    background-color:#262626;
+}
+.dropdownContent{
+    display:none;
+    background-color:  #737373;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width:200px;
+    z-index: 1;
+    position: absolute;
+    right:10px;
+}
+
+.dropdownContent a{
+    display:none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    align-self:center;
+   
+}
+.dropdownContent a:hover{
+    background-color:#007acc;
+     
+}
+
+main{
+    color:white;
+
+}  
+h3{
+    text-align:center;
+    padding:10px 0px;
+}
+.aboutme{
+    display:flex;
+   justify-content:center;
+   flex-wrap:wrap;
+}
+.imgAbout{
+  text-align: center;
+    
+}
+.imgAbout img{
+    width:40%;
+}
+.aboutMeContainer{
+    text-align: justify;
+
+}
+footer{
+    background-color:#616161;
+    width:100%;
+    color:white;
+    position:absolute;
+    bottom:0px;
+    height:50px;
+    text-align:center;
+    
+}
+footer p{
+
+    padding:10px 0px 10px 0px;
+}
